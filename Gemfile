@@ -2,11 +2,19 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 gem 'rails-api'
-gem 'sqlite3'
+gem 'pg'
 gem 'active_model_serializers'
-gem 'devise'
+gem 'devise_token_auth'
+gem 'omniauth'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
 end
+
+group :development do
+  gem 'mailcatcher'
+end
+
+gem 'rails_12factor', group: :production
