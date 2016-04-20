@@ -7,6 +7,7 @@ gem 'active_model_serializers'
 gem 'devise_token_auth'
 gem 'omniauth'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'unicorn', '~> 4.9.0'
 
 group :development, :test do
   gem 'spring'
